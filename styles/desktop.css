@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 h1,
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .container {
   margin: auto;
@@ -36,7 +36,7 @@ nav ul li {
 nav li:first-child {
   border-left: none;
 }
-main{
+main {
   display: flex;
   gap: 10px;
 }
@@ -45,9 +45,10 @@ main{
   padding: 0 10px 10px 0;
 }
 .left-float {
-  float:left;
-  padding:0 10px 10px 0;
+  float: left;
+  padding: 0 10px 10px 0;
 }
+
 .sidebar {
   flex: 0 1 200px;
   padding: 20px 40px;
@@ -55,16 +56,19 @@ main{
   border-radius: 8px;
   margin-top: 70px;
 }
+
 table {
   width: 100%;
   max-width: 600px;
   min-width: 300px;
 }
+
 th,
 td {
   padding: 10px 4px;
   text-align: left;
 }
+
 th {
   text-transform: uppercase;
   border-bottom: 4px solid #000;
@@ -74,3 +78,35 @@ tr:nth-child(odd) {
   background-color: #ccc;
 }
 /* Form Styling Needs Adding */
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+form > div {
+  margin: 15px 0;
+  display: flex;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+.submitContainer {
+  justify-content: flex-end;
+}
+input[type='submit'] {
+  width: auto;
+  margin: 0;
+}
+
+.burger {
+  display: none;
+}
+
+nav {
+/* for burger menu */
+  overflow: auto; 
+}
